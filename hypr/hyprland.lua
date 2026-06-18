@@ -1,0 +1,11 @@
+
+require("animations")
+require("autostart")
+require("binds")
+require("env")
+require("input")
+require("misc")
+require("monitors")
+require("permissions")
+require("windows")
+require("colors")
