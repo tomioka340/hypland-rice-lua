@@ -1,0 +1,257 @@
+
+
+@import "colors.css";
+
+* {
+    border: none;
+    border-radius: 1px;
+    font-family: SF Pro Display, 
+                 Helvetica, 
+                 JetBrainsMono Nerd Font, 
+                 Arial, 
+                 sans-serif, 
+                 ttf-jetbrains-mono-nerd, 
+                 otf-font-awesome,
+                 "Font Awesome 6 Free",
+                 Hack Nerd Font;
+
+    font-size: 14px;
+    min-height: 0;
+    padding: 1px;
+    margin: -3px;
+}
+
+window#waybar {
+    background: transparent;
+    color: white;
+}
+
+tooltip {
+  background: @background;
+  border: 1px solid rgba(100, 114, 125, 0.5);
+}
+tooltip label {
+  color: @onsurface;
+}
+
+#workspaces{
+    all: initial;
+  background-color: rgba(0,0,0,0.7);
+border: 1px solid;
+    border-color: @onsurface;
+    margin: 10px;
+border-radius: 10px;
+    
+}
+
+#workspaces button {
+
+    color: @primary;
+    padding: 15px;
+    font-weight: 700;
+}
+#workspaces button.active {
+
+    background: @tertiary;
+    color: @tertiary;
+    margin: 11px;
+    padding: 1px;
+    border-radius: 30px;
+    font-weight: 100;
+    
+}
+/*
+#workspaces {
+background: @background;
+margin: 10px;
+border-radius: 10px;
+background-color: rgba(0,0,0,0.7);
+border: 1px solid;
+    border-color: @onsurface;
+    
+
+
+
+}
+
+#workspaces button {
+
+    color: @primary;
+    margin: 5px;
+    padding: 0 15px;
+    border-radius: 80px;
+    transition: all 600ms ease-in-out; 
+    background: transparent;
+   
+}
+
+#workspaces button:hover {
+
+    background: @tertiary;
+    color: black;
+    font-weight: 100;
+  
+     
+}
+
+#workspaces button.active {
+
+    background: @tertiary;
+    color: @background;
+    margin: 5px;
+    border-radius: 80px;
+    font-weight: 100;
+    
+}
+
+*/
+
+#mode, #clock, #battery {
+    padding: 0 15px;
+}
+
+#mode {
+    background: #64727D;
+    border-bottom: 3px solid white;
+}
+
+
+#clock,
+#memory,
+#cpu,
+#backlight,
+#temperature,
+#battery,
+#pulseaudio,
+#custom-notification,
+#network {
+
+    background-color: rgba(0,0,0,0.7);
+    margin: 10px;
+    border-radius: 10px;
+    font-weight: 900;
+    padding:10px;
+    border: 1px solid;
+    border-color: @onsurface;
+    
+
+}
+
+
+
+
+/*
+#clock,
+#memory,
+#cpu,
+#backlight,
+#temperature,
+#battery,
+#pulseaudio,
+#custom-notification,
+#network {
+
+    background-color: rgba(0,0,0,0.7);
+    margin: 10px;
+    border-radius: 1px;
+    font-weight: 900;
+    padding:10px;
+
+    
+
+}
+    */
+
+
+
+
+
+#clock {
+
+    color: @primary;
+
+}
+
+
+#custom-notification {
+
+color: @secondary;
+
+
+
+}
+
+
+
+
+#memory {
+
+    color: @primary;
+
+}
+
+
+
+#cpu {
+
+    color: @primary;
+
+}
+
+
+
+#temperature
+
+{
+
+    color: @secondary;
+
+}
+
+
+ 
+
+#backlight {
+
+    color: @secondary;
+
+}
+
+
+
+
+
+#network {
+
+    color: @secondary;
+
+}
+
+
+
+#pulseaudio {
+
+    color: @inverse_secondary;
+
+}
+
+
+
+
+#battery {
+
+    color: @primary;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+

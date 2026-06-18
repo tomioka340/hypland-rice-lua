@@ -1,0 +1,31 @@
+[config.wallpaper]
+
+command = "awww"
+
+arguments = ["img", "--transition-type", "wipe"]
+
+
+
+set = true
+
+
+[templates.kitty]
+input_path = '~/.config/matugen/templates/kitty-colors.conf'
+output_path = '~/.config/kitty/themes/Matugen.conf'
+post_hook = "kitty +kitten themes --reload-in=all Matugen"
+
+[templates.waybar]
+input_path = '~/.config/matugen/templates/colors.css'
+output_path = '~/.config/waybar/colors.css'
+post_hook = 'pkill waybar && sleep 1s && waybar & disown'
+
+[templates.rofi]
+input_path = '~/.config/matugen/templates/rofi-colors.rasi'
+output_path = '~/.config/rofi/colors.rasi'
+
+
+[templates.hyprland]
+input_path = '~/.config/matugen/templates/hyprland-colors.lua'
+output_path = '~/.config/hypr/colors.lua'
+post_hook = 'hyprctl reload'
+
